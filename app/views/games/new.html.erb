@@ -1,0 +1,8 @@
+<h1>Games#new</h1>
+<%= @letters %>
+<form action="/score" method="post">
+   <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <%= hidden_field_tag :letters, @letters %>
+  <input type="text" name="word" placeholder="What would you like to try?">
+  <input type="submit">
+</form>

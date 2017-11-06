@@ -1,0 +1,11 @@
+<h1>Games#score</h1>
+
+<% if @included %>
+   <% if @english_word %>
+     <%  return "congrats! that is an english word" %>
+        <% else %>
+      <% return "Sorry that isn't english" %>
+     <% end %>
+    <% else %>
+    <% return "Sorry that doesn't work" %>
+<% end %>
